@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		0F595B4E2D0B036200F9D722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B4D2D0B036200F9D722 /* AppDelegate.swift */; };
 		0F595B502D0B036200F9D722 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B4F2D0B036200F9D722 /* SceneDelegate.swift */; };
-		0F595B522D0B036200F9D722 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B512D0B036200F9D722 /* ViewController.swift */; };
 		0F595B552D0B036200F9D722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F595B532D0B036200F9D722 /* Main.storyboard */; };
 		0F595B572D0B036300F9D722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F595B562D0B036300F9D722 /* Assets.xcassets */; };
 		0F595B5A2D0B036300F9D722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F595B582D0B036300F9D722 /* LaunchScreen.storyboard */; };
 		0F595B652D0B036300F9D722 /* TvShowsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B642D0B036300F9D722 /* TvShowsAppTests.swift */; };
 		0F595B6F2D0B036300F9D722 /* TvShowsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B6E2D0B036300F9D722 /* TvShowsAppUITests.swift */; };
 		0F595B712D0B036300F9D722 /* TvShowsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B702D0B036300F9D722 /* TvShowsAppUITestsLaunchTests.swift */; };
+		0F595B802D0B04AA00F9D722 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B7F2D0B04AA00F9D722 /* Endpoint.swift */; };
+		0F595B822D0B04C000F9D722 /* Servicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B812D0B04C000F9D722 /* Servicing.swift */; };
+		0F595B842D0B04D000F9D722 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B832D0B04D000F9D722 /* Api.swift */; };
+		0F595B862D0B04EA00F9D722 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B852D0B04EA00F9D722 /* String+Extensions.swift */; };
+		0F595B882D0B050100F9D722 /* ErrorViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B872D0B050100F9D722 /* ErrorViewProtocol.swift */; };
+		0F595B8B2D0B054100F9D722 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F595B8A2D0B054100F9D722 /* ItemCell.swift */; };
+		0F595B8E2D0B056400F9D722 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0F595B8D2D0B056400F9D722 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,6 @@
 		0F595B4A2D0B036200F9D722 /* TvShowsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TvShowsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F595B4D2D0B036200F9D722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F595B4F2D0B036200F9D722 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0F595B512D0B036200F9D722 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0F595B542D0B036200F9D722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F595B562D0B036300F9D722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F595B592D0B036300F9D722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,12 @@
 		0F595B6A2D0B036300F9D722 /* TvShowsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TvShowsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F595B6E2D0B036300F9D722 /* TvShowsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsAppUITests.swift; sourceTree = "<group>"; };
 		0F595B702D0B036300F9D722 /* TvShowsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0F595B7F2D0B04AA00F9D722 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		0F595B812D0B04C000F9D722 /* Servicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servicing.swift; sourceTree = "<group>"; };
+		0F595B832D0B04D000F9D722 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		0F595B852D0B04EA00F9D722 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		0F595B872D0B050100F9D722 /* ErrorViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewProtocol.swift; sourceTree = "<group>"; };
+		0F595B8A2D0B054100F9D722 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F595B8E2D0B056400F9D722 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +111,10 @@
 		0F595B4C2D0B036200F9D722 /* TvShowsApp */ = {
 			isa = PBXGroup;
 			children = (
+				0F595B7E2D0B048C00F9D722 /* Scenes */,
+				0F595B7D2D0B048600F9D722 /* Common */,
 				0F595B4D2D0B036200F9D722 /* AppDelegate.swift */,
 				0F595B4F2D0B036200F9D722 /* SceneDelegate.swift */,
-				0F595B512D0B036200F9D722 /* ViewController.swift */,
 				0F595B532D0B036200F9D722 /* Main.storyboard */,
 				0F595B562D0B036300F9D722 /* Assets.xcassets */,
 				0F595B582D0B036300F9D722 /* LaunchScreen.storyboard */,
@@ -127,6 +140,34 @@
 			path = TvShowsAppUITests;
 			sourceTree = "<group>";
 		};
+		0F595B7D2D0B048600F9D722 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0F595B7F2D0B04AA00F9D722 /* Endpoint.swift */,
+				0F595B812D0B04C000F9D722 /* Servicing.swift */,
+				0F595B832D0B04D000F9D722 /* Api.swift */,
+				0F595B852D0B04EA00F9D722 /* String+Extensions.swift */,
+				0F595B872D0B050100F9D722 /* ErrorViewProtocol.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0F595B7E2D0B048C00F9D722 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0F595B892D0B052E00F9D722 /* Common */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0F595B892D0B052E00F9D722 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0F595B8A2D0B054100F9D722 /* ItemCell.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +184,9 @@
 			dependencies = (
 			);
 			name = TvShowsApp;
+			packageProductDependencies = (
+				0F595B8D2D0B056400F9D722 /* Kingfisher */,
+			);
 			productName = TvShowsApp;
 			productReference = 0F595B4A2D0B036200F9D722 /* TvShowsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +259,10 @@
 				Base,
 			);
 			mainGroup = 0F595B412D0B036200F9D722;
+			packageReferences = (
+				0F595B8C2D0B056400F9D722 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				0F595B8F2D0B056E00F9D722 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 0F595B4B2D0B036200F9D722 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F595B522D0B036200F9D722 /* ViewController.swift in Sources */,
+				0F595B8B2D0B054100F9D722 /* ItemCell.swift in Sources */,
+				0F595B822D0B04C000F9D722 /* Servicing.swift in Sources */,
 				0F595B4E2D0B036200F9D722 /* AppDelegate.swift in Sources */,
+				0F595B802D0B04AA00F9D722 /* Endpoint.swift in Sources */,
+				0F595B842D0B04D000F9D722 /* Api.swift in Sources */,
+				0F595B882D0B050100F9D722 /* ErrorViewProtocol.swift in Sources */,
+				0F595B862D0B04EA00F9D722 /* String+Extensions.swift in Sources */,
 				0F595B502D0B036200F9D722 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +660,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F595B8C2D0B056400F9D722 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.2;
+			};
+		};
+		0F595B8F2D0B056E00F9D722 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0F595B8D2D0B056400F9D722 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F595B8C2D0B056400F9D722 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0F595B422D0B036200F9D722 /* Project object */;
 }
