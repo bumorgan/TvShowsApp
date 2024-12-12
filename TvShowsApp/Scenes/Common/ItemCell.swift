@@ -7,6 +7,7 @@
 
 import Foundation
 import Kingfisher
+import SnapKit
 import UIKit
 
 protocol ItemCellProtocol {
