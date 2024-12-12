@@ -171,8 +171,8 @@
 		0F595B4C2D0B036200F9D722 /* TvShowsApp */ = {
 			isa = PBXGroup;
 			children = (
-				0F595B7E2D0B048C00F9D722 /* Scenes */,
-				0F595B7D2D0B048600F9D722 /* Common */,
+				0F595B7E2D0B048C00F9D722 /* Presentation */,
+				0F595B7D2D0B048600F9D722 /* Data */,
 				0F595B4D2D0B036200F9D722 /* AppDelegate.swift */,
 				0F595B4F2D0B036200F9D722 /* SceneDelegate.swift */,
 				0F595B532D0B036200F9D722 /* Main.storyboard */,
@@ -200,28 +200,27 @@
 			path = TvShowsAppUITests;
 			sourceTree = "<group>";
 		};
-		0F595B7D2D0B048600F9D722 /* Common */ = {
+		0F595B7D2D0B048600F9D722 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				0F595B7F2D0B04AA00F9D722 /* Endpoint.swift */,
 				0F595B812D0B04C000F9D722 /* Servicing.swift */,
 				0F595B832D0B04D000F9D722 /* Api.swift */,
-				0F595B852D0B04EA00F9D722 /* String+Extensions.swift */,
-				0F595B872D0B050100F9D722 /* ErrorViewProtocol.swift */,
 			);
-			path = Common;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		0F595B7E2D0B048C00F9D722 /* Scenes */ = {
+		0F595B7E2D0B048C00F9D722 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0F595BD32D0B0A7800F9D722 /* Utils */,
 				0F595BC12D0B08E700F9D722 /* ShowDetail */,
 				0F595BAD2D0B082B00F9D722 /* Shows */,
 				0F595BA42D0B073500F9D722 /* EpisodeDetail */,
 				0F595B922D0B066D00F9D722 /* Episodes */,
 				0F595B892D0B052E00F9D722 /* Common */,
 			);
-			path = Scenes;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		0F595B892D0B052E00F9D722 /* Common */ = {
@@ -311,6 +310,15 @@
 				0F595BD12D0B094B00F9D722 /* ShowDetailDisplayingModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0F595BD32D0B0A7800F9D722 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0F595B852D0B04EA00F9D722 /* String+Extensions.swift */,
+				0F595B872D0B050100F9D722 /* ErrorViewProtocol.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
