@@ -13,8 +13,7 @@ protocol EpisodesServicing: Servicing {
 
 final class EpisodesService: EpisodesServicing {
     func fetchEpisodes(with id: Int, completion: @escaping ModelCompletionBlock<[Episode]>) {
-        let api = Api<[Episode]>.init(endpoint: Endpoint.episodes(id: id).path)
-        api.execute { result in
+        Api.shared.execute(endpoint: Endpoint.episodes(id: id).path) { result in
             completion(result)
         }
     }

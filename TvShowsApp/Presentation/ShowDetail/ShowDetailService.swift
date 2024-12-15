@@ -13,8 +13,7 @@ protocol ShowDetailServicing: Servicing {
 
 final class ShowDetailService: ShowDetailServicing {
     func fetchShowDetail(with id: Int, completion: @escaping ModelCompletionBlock<ShowDetail>) {
-        let api = Api<ShowDetail>.init(endpoint: Endpoint.showDetail(id: id).path)
-        api.execute { result in
+        Api.shared.execute(endpoint: Endpoint.showDetail(id: id).path) { result in
             completion(result)
         }
     }

@@ -14,14 +14,10 @@ enum ApiError: Error {
     case genericError(description: String)
 }
 
-class Api<E: Decodable>: Servicing {
-    private let endpoint: String
-    
-    init(endpoint: String) {
-        self.endpoint = endpoint
-    }
-    
-    func execute(completion: @escaping ModelCompletionBlock<E>) {
+final class Api: Servicing {
+    static let shared = Api()
+
+    func execute<E: Decodable>(endpoint: String, completion: @escaping ModelCompletionBlock<E>) {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
 

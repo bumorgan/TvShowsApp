@@ -14,15 +14,13 @@ protocol ShowsServicing: Servicing {
 
 final class ShowsService: ShowsServicing {
     func fetchShows(of page: Int, completion: @escaping ModelCompletionBlock<[Show]>) {
-        let api = Api<[Show]>.init(endpoint: Endpoint.shows(page: page).path)
-        api.execute { result in
+        Api.shared.execute(endpoint: Endpoint.shows(page: page).path) { result in
             completion(result)
         }
     }
     
     func fetchSearch(with text: String, completion: @escaping ModelCompletionBlock<[SearchResult]>) {
-        let api = Api<[SearchResult]>.init(endpoint: Endpoint.searchShow(text: text).path)
-        api.execute { result in
+        Api.shared.execute(endpoint: Endpoint.searchShow(text: text).path) { result in
             completion(result)
         }
     }
