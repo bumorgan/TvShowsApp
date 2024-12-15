@@ -144,7 +144,11 @@ extension ShowDetailViewController: ShowDetailDisplaying {
             self.genresLabel.text = show.genres
             self.scheduleLabel.text = show.schedule
             self.summaryLabel.text = show.summary
-            self.imgView.kf.setImage(with: show.imageUrl)
+            if let imageUrl = show.imageUrl {
+                self.imgView.kf.setImage(with: show.imageUrl)
+            } else {
+                self.imgView.image = UIImage(systemName: "camera.circle")
+            }
         }
     }
     

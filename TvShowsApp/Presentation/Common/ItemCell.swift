@@ -70,7 +70,7 @@ final class ItemCell: UITableViewCell {
     func setup(with item: ItemCellProtocol) {
         titleLabel.text = item.title
         guard let imageUrl = item.imageUrl else {
-            imgView.isHidden = true
+            imgView.image = UIImage(systemName: "camera.circle")
             return
         }
         imgView.kf.setImage(with: imageUrl)
