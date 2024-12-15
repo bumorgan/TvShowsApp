@@ -42,7 +42,6 @@ final class ItemCell: UITableViewCell {
     
     override func prepareForReuse() {
         imgView.kf.cancelDownloadTask()
-        imgView.isHidden = false
         imgView.image = nil
         titleLabel.text = nil
     }

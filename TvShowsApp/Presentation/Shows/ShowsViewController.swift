@@ -24,7 +24,6 @@ final class ShowsViewController: UIViewController, ErrorViewProtocol {
         let search = UISearchController(searchResultsController: nil)
         search.searchBar.placeholder = "Search"
         search.searchBar.delegate = self
-        search.definesPresentationContext = true
         search.obscuresBackgroundDuringPresentation = false
         return search
     }()
