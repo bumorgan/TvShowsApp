@@ -20,8 +20,7 @@ extension Endpoint {
         case let .shows(page):
             return "https://api.tvmaze.com/shows?page=\(page)"
         case let .searchShow(search):
-            let text = search.replacingOccurrences(of: " ", with: "%20")
-            return "https://api.tvmaze.com/search/shows?q=\(text)"
+            return "https://api.tvmaze.com/search/shows?q=\(search)"
         case let .showDetail(id):
             return "https://api.tvmaze.com/shows/\(id)"
         case let .episodes(id):

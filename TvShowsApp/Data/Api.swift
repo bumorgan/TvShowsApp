@@ -25,7 +25,7 @@ class Api<E: Decodable>: Servicing {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
 
-        guard let api = URL(string: endpoint) else {
+        guard let endpoint = endpoint.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed), let api = URL(string: endpoint) else {
             return completion(.failure(.urlParseError))
         }
 
