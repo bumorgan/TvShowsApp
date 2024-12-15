@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "BDAA63A5-DB30-40EB-BE16-EAF6192543E1",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TvShowsApp.xcodeproj",
+      "identifier" : "0F595B492D0B036200F9D722",
+      "name" : "TvShowsApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TvShowsApp.xcodeproj",
+        "identifier" : "0F595B5F2D0B036300F9D722",
+        "name" : "TvShowsAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

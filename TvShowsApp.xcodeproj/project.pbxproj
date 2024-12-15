@@ -131,6 +131,7 @@
 		0F595BDF2D0B0B3000F9D722 /* ShowDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailPresenterTests.swift; sourceTree = "<group>"; };
 		0F595BE22D0B0B5400F9D722 /* ShowsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsInteractorTests.swift; sourceTree = "<group>"; };
 		0F595BE42D0B0B6A00F9D722 /* ShowsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsPresenterTests.swift; sourceTree = "<group>"; };
+		0F5E58832D0F0F3E00C5AC7A /* TvShowsApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TvShowsApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +164,7 @@
 		0F595B412D0B036200F9D722 = {
 			isa = PBXGroup;
 			children = (
+				0F5E58832D0F0F3E00C5AC7A /* TvShowsApp.xctestplan */,
 				0F595B4C2D0B036200F9D722 /* TvShowsApp */,
 				0F595B632D0B036300F9D722 /* TvShowsAppTests */,
 				0F595B6D2D0B036300F9D722 /* TvShowsAppUITests */,
